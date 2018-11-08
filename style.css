@@ -1,0 +1,16 @@
+*{
+    display: inline-block;
+}
+
+.container{
+    width: 900px;
+}
+
+/* Navigation */
+header{
+    display: flex;
+}
+
+nav{
+    display: flex;
+}
