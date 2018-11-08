@@ -1,16 +1,112 @@
 *{
-    display: inline-block;
+    box-sizing: border-box;
 }
 
 .container{
     width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    align-items: baseline;
+}
+
+.logo{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
 }
 
 /* Navigation */
-header{
-    display: flex;
-}
-
 nav{
     display: flex;
+    font-size: 20px;
+}
+
+nav a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav a:hover{
+    border-bottom: 2px solid gray;
+}
+
+/* -------------------- */
+/* --- Media Queries -- */
+/* -------------------- */
+ 
+/* ----- Smartphones (portrait and landscape) ----- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .container{
+        width: 100%;
+    }
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+ 
+/* ----- Smartphones (landscape) ----- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+ 
+/* ----- Smartphones (portrait) ----- */
+/* ----- viewport size <= 320px ----- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+ 
+/* ----- iPads (portrait and landscape) ----- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+ 
+/* ----- iPads (landscape) ----- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+ 
+/* i----- Pads (portrait) ----- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+ 
+/* ----- Desktops and laptops ----- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+ 
+/* ----- Large screens ----- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+ 
+/*************** Specific to device if required **********************/
+/* stolen from http://nmsdvid.com/snippets/ **************************/
+ 
+/* iPad Mini ------------------ */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) {
 }
