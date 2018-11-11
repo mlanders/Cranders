@@ -3,7 +3,7 @@
 }
 
 .container{
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -11,56 +11,108 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5px;
-    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    color: whitesmoke;
     align-items: baseline;
+}
+.topBar{
+    width: 100%;
+    background-color: rgb(73, 73, 73);
+    border-bottom: 3px solid rgba(196, 196, 196, 0.5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */;
 }
 
 .logo{
     font-size: 30px;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
+    padding: 5px 0 0 5px;
 }
 
 /* Navigation */
 nav{
     display: flex;
     font-size: 20px;
+    color: whitesmoke;
 }
 
 nav a{
     padding: 10px 15px;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     
 }
 
 nav a:hover{
-    border-bottom: 2px solid gray;
+    background-color: gray;
 }
 
+/* Featured Section */
+.featured{
+    height: 200px;
+    background-color: red;
+}
+
+/* Portfolio Section */
+h3{
+    font-size: 24px;
+}
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+    padding: 5px;
+    /* background-color: rgb(241, 241, 241); */
+    /* border: 1px solid gray; */
+}
+#portfolio p{
+    margin-bottom: 15px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 4px;
+}
+.repoBtn{
+    padding: 5px 15px;
+    width: 150px;    
+    border: 1px solid gray;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(221, 221, 221);
+
+}
 /* -------------------- */
 /* --- Media Queries -- */
 /* -------------------- */
  
-/* ----- Smartphones (portrait and landscape) ----- */
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 414px) {
-    .container{
-        width: 100%;
-        padding: 5px;
-    }
+@media  (min-width : 850px){
+    /* .container{
+        width: 850px;
+    } */
     header{
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        width: 850px;
+        margin: 0 auto;
     }
-    .logo{
+    .topBar{
         width: 100%;
     }
+    /* .logo{
+
+    } */
 }
 @media only screen and (max-width: 900px){
-    .container{
+    /* .container{
         width: 100%;
-    }
+    } */
 } 
