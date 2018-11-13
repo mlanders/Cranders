@@ -1,3 +1,6 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
 *{
     box-sizing: border-box;
 }
@@ -29,6 +32,7 @@ header{
     text-decoration: none;
     color: whitesmoke;
     padding: 5px 0 0 5px;
+    font-weight: 500;
 }
 
 /* Navigation */
@@ -52,7 +56,7 @@ nav a:hover{
 /* Featured Section */
 .featured{
     height: 200px;
-    background-color: red;
+    width: 100%;
 }
 
 /* Portfolio Section */
@@ -79,6 +83,7 @@ h3{
     padding: 5px;
     border: 1px solid rgb(66, 66, 66);
     border-radius: 4px;
+    justify-content: space-between;
 }
 .repoBtn{
     padding: 5px 15px;
@@ -88,7 +93,10 @@ h3{
     text-decoration: none;
     color: black;
     background-color: rgb(221, 221, 221);
-
+}
+.repoBtn:hover{
+    background-color: rgb(59, 72, 150);
+    color: white;
 }
 /* -------------------- */
 /* --- Media Queries -- */
@@ -107,12 +115,14 @@ h3{
     .topBar{
         width: 100%;
     }
+
+    .featured img{
+        width: 850px;
+        height: 200px;
+    }
     /* .logo{
 
     } */
 }
-@media only screen and (max-width: 900px){
-    /* .container{
-        width: 100%;
-    } */
+
 } 
