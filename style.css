@@ -54,8 +54,8 @@ nav a:hover{
 }
 
 /* Featured Section */
-.featured{
-    height: 200px;
+.featured img{
+    height: auto;
     width: 100%;
 }
 
@@ -113,12 +113,13 @@ h3{
         margin: 0 auto;
     }
     .topBar{
-        width: 100%;
+        width: 850px;
+        margin: 0 auto;
     }
 
     .featured img{
         width: 850px;
-        height: 200px;
+        height: auto;
     }
     /* .logo{
 
