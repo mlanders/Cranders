@@ -144,12 +144,14 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #2B2B2B;
+  color: #66717E;
 }
 p {
   margin-bottom: 10px;
 }
 .container {
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
@@ -161,7 +163,7 @@ header {
   align-items: baseline;
   padding: 10px 10px 10px;
   border-bottom: 2px solid #383838;
-  background-color: #fff;
+  background-color: #2B2B2B;
   position: fixed;
   top: 0;
   width: 100%;
@@ -175,13 +177,13 @@ header {
 header nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #383838;
+  color: #C2C9D1;
 }
 header .logo {
   font-size: 4rem;
   text-decoration: none;
   font-weight: 500;
-  color: #383838;
+  color: #C2C9D1;
 }
 @media (max-width: 500px) {
   header .logo {
@@ -192,12 +194,13 @@ header .logo {
   /* The image used */
   background-image: url("/img/hawaii.jpg");
   /* Set a specific height */
-  height: 400px;
+  height: 200px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 60px;
 }
 .portfolio {
   background-color: white;
