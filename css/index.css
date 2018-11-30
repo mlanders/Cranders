@@ -144,8 +144,21 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  font-family: 'Rock Salt', cursive;
   background-color: #2B2B2B;
-  color: #66717E;
+  color: #E8E9EB;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.8rem;
 }
 p {
   margin-bottom: 10px;
@@ -164,8 +177,9 @@ header {
   padding: 10px 10px 10px;
   border-bottom: 2px solid #383838;
   background-color: #2B2B2B;
+  z-index: 2;
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
 }
 @media (max-width: 500px) {
@@ -192,7 +206,16 @@ header .logo {
 }
 .hero {
   /* The image used */
-  background-image: url("/img/hawaii.jpg");
+  background: #e570e7;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
   /* Set a specific height */
   height: 200px;
   /* Create the parallax scrolling effect */
@@ -201,10 +224,34 @@ header .logo {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 60px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Rock Salt', cursive;
+}
+.hero .tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 270px;
+  margin-bottom: 30px;
+}
+.hero .headshot {
+  height: 150px;
+  width: 150px;
+  margin-top: 27px;
+  z-index: 1;
+}
+.hero .headshot img {
+  border-radius: 50%;
+  border: 4px solid #313638;
 }
 .portfolio {
-  background-color: white;
-  height: 600px;
+  height: 900px;
+  padding-top: 60px;
 }
 footer {
   display: flex;
